@@ -1,0 +1,7 @@
+# . link id and pose of foot to be updated
+int32 link_idx
+geometry_msgs/Pose foot_pose
+# - think about making robot able to move more than one foot at a time?
+# - consider changing time to step as well and maybe step height?
+---
+bool success

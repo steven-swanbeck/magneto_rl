@@ -1,0 +1,11 @@
+<launch>
+    <rosparam command="load" file="$(find magneto_rl)/config/params.yaml"/>
+    <node
+        name    = "magneto_rl_env"
+        pkg     = "magneto_rl" 
+        type    = "magneto_gym_env.py"
+        args    = ""
+        output  = "screen"
+    >
+    </node>
+</launch>

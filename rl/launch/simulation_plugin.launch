@@ -1,0 +1,11 @@
+<launch>
+    <rosparam command="load" file="$(find magneto_rl)/config/params.yaml"/>
+    <node
+        name    = "magneto_rl_plugin"
+        pkg     = "magneto_rl" 
+        type    = "magneto_plugin.py"
+        args    = ""
+        output  = "screen"
+    >
+    </node>
+</launch>

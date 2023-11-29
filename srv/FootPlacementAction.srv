@@ -1,8 +1,0 @@
-int32 link_idx
-geometry_msgs/Point pos
----
-geometry_msgs/Point p_ar
-geometry_msgs/Point p_al
-geometry_msgs/Point p_bl
-geometry_msgs/Point p_br
-geometry_msgs/Pose base_pose

@@ -1,9 +1,0 @@
-# Probably no inputs for now?
----
-# . Pose of robot body & state of each foot
-geometry_msgs/Pose ground_pose
-geometry_msgs/Pose body_pose
-magneto_rl/FootState AR_state
-magneto_rl/FootState AL_state
-magneto_rl/FootState BL_state
-magneto_rl/FootState BR_state

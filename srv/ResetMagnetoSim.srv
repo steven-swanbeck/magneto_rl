@@ -1,6 +1,0 @@
-# . pose for base and goal
-geometry_msgs/Pose base_pose
-geometry_msgs/Pose goal_pose
-# - pause bool?
----
-bool success

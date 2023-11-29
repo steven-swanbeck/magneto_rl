@@ -1,0 +1,3 @@
+[submodule "magneto-pnc"]
+	path = magneto-pnc
+	url = https://github.com/steven-swanbeck/magneto-pnc.git
