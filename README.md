@@ -14,7 +14,9 @@ Falling due to weak magnetism |  Avoiding areas of weak magnetism to reach goal
 ## Contents
 ```rl/``` contains plugins a custom Gym environment for a Nexxis Magneto wall climbing robot with a ROS-based plugin to interface with an adapted version of the simulation [originally developed by Jee-Eun Lee](https://github.com/jeeeunlee/ros-pnc.git), a simplified game-based simulation for training and visualization purposes, utilities to create maps of magnetic variability, and training and evaluation scripts to learn from both full- and game-based simulations using Deep Q-learning.
 
-Please refer to the [modified version of Jee-Eun's original simulation](https://github.com/steven-swanbeck/magneto-pnc.git) and to the [original project workspace](https://github.com/steven-swanbeck/magneto_rl_basic.git) to see more details of implementation and to use other learning algorithms (namely simple, recurrent, and convolutional implementations of proximal policy optimization) and approaches.  
+Please refer to the [modified version of Jee-Eun's original simulation](https://github.com/steven-swanbeck/magneto-pnc.git) and to the [original project workspace](https://github.com/steven-swanbeck/magneto_rl_basic.git) to see more details of implementation and to use other learning algorithms (namely simple, recurrent, and convolutional implementations of proximal policy optimization) and approaches that were not carried over to this repository.  
+
+---
 
 ## Requirements, Dependencies, and Building
 These packages are built and tested on a system running ROS1 noetic on Ubuntu 20.04. However, the game simulation and all learning components are pure Python, and can be run independently of ROS or of the dependencies of the full simulation.
@@ -71,6 +73,10 @@ python3 eval.py
 ```
 respectively, from within ```rl/src/```.
 
+---
+
+## Sample Results
+
 ### PPO
 [](https://github.com/steven-swanbeck/magneto_rl/assets/99771915/e71eb0a7-010a-4f5b-82d1-5deb75673722)
 
@@ -78,7 +84,5 @@ respectively, from within ```rl/src/```.
 [](https://github.com/steven-swanbeck/magneto_rl/assets/99771915/3e2304db-922f-4e7e-9f5a-aecd7f42712f)
 
 ![](assets/ppo.mp4) 
-
 ![](assets/dqn.mp4)
-
 Notice in the results above that the PPO policy often fails to repsect and avoid areas of weakened magnetism, causing the robot to slip and sometimes fall. The DQN policy, in contrast, does a better job of avoiding the weak magnetism and--therefore staying on the wall--on its way to a goal position.
