@@ -24,7 +24,7 @@ These packages are built and tested on a system running ROS1 noetic on Ubuntu 20
 ### Game Simulation
 1. Clone the repository without submodules:
 ```
-git clone https://github.com/steven-swanbeck/magneto_rl.git
+git clone git@github.com:steven-swanbeck/magneto_rl.git
 ```
 
 ### Full Simulation
@@ -34,7 +34,7 @@ mkdir -p catkin_ws/src && cd catkin_ws
 ```
 2. Clone the contents of this repository:
 ```
-git clone --recurse-submodules git@github.com:steven-swanbeck/magneto-rl.git src/
+git clone --recurse-submodules git@github.com:steven-swanbeck/magneto_rl.git src/
 ```
 
 3. Install all package dependencies:
