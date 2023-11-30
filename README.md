@@ -80,9 +80,11 @@ respectively, from within ```rl/src/```.
 ### PPO
 [](https://github.com/steven-swanbeck/magneto_rl/assets/99771915/e71eb0a7-010a-4f5b-82d1-5deb75673722)
 
+Though it developed the desired goal-pursuing behaviors, the PPO policy often fails to respect and avoid areas of weakened magnetism, causing the robot to take risky paths over dangerous areas that often result in falls or slips.
+
 ### DQN
 [](https://github.com/steven-swanbeck/magneto_rl/assets/99771915/3e2304db-922f-4e7e-9f5a-aecd7f42712f)
 
+The DQN policy, in contrast, better learned both goal-pursuant and weak-magnetism-avoidant behaviors, helping it safely navigate surfaces with magnetic uncertainty and accomplishing the project objectives. 
 ![](assets/ppo.mp4) 
 ![](assets/dqn.mp4)
-Notice in the results above that the PPO policy often fails to repsect and avoid areas of weakened magnetism, causing the robot to slip and sometimes fall. The DQN policy, in contrast, does a better job of avoiding the weak magnetism and--therefore staying on the wall--on its way to a goal position.
